@@ -11,7 +11,6 @@ import Child1 from './components/Child1'
 export class App extends Component {
   constructor(props) {
     super(props);
-   console.log(this)
     this.state = {
       count: 0,
       toggleMe: false,
@@ -38,7 +37,6 @@ export class App extends Component {
     //   toggleMe: !this.state.toggleMe,
     // });
     this.setState((prevState) => {
-      console.log(prevState);
       return {
         toggleMe: !prevState.toggleMe,
       };
