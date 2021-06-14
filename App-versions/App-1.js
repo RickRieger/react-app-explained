@@ -20,11 +20,15 @@ export class App extends Component {
     //as in minusCount below.
     this.addCount = this.addCount.bind(this);
   }
+
+
   addCount() {
     this.setState({
       count: this.state.count + 1,
     });
   }
+
+
   minusCount = () => {
     this.setState({
       count: this.state.count - 1,
@@ -32,6 +36,8 @@ export class App extends Component {
   };
   //two ways to toggle between a boolean, 
   //the second example is preferable.(un-commented version)
+
+
   toggleMeColor = () => {
     // this.setState({
     //   toggleMe: !this.state.toggleMe,
@@ -42,6 +48,8 @@ export class App extends Component {
       };
     });
   };
+
+  
   render() {
     return (
       <div style={{ textAlign: "center", marginTop: 50 }}>
